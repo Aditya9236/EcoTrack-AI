@@ -1,0 +1,48 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper to check if user is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Helper to check if request is from the owner
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Users collection: only owners can read or write their profile
+    match /users/{userId} {
+      allow read, write: if isOwner(userId);
+      
+      // Subcollections under users (achievements and goals) inherit owners check
+      match /achievements/{achievementId} {
+        allow read, write: if isOwner(userId);
+      }
+      
+      match /goals/{goalId} {
+        allow read, write: if isOwner(userId);
+      }
+    }
+
+    // Carbon Records collection: owners can read/write their carbon history logs
+    match /carbon_records/{recordId} {
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+      allow read, update, delete: if isAuthenticated() && resource.data.userId == request.auth.uid;
+    }
+
+    // Global activities definitions: read-only for authenticated users, writes disabled
+    match /activities/{activityId} {
+      allow read: if isAuthenticated();
+      allow write: if false;
+    }
+
+    // Global community challenges: read-only for authenticated users, writes disabled
+    match /challenges/{challengeId} {
+      allow read: if isAuthenticated();
+      allow write: if false;
+    }
+  }
+}
