@@ -1,17 +1,24 @@
-# Env files
+# Env files — never commit secrets
 .env
 .env.*
+.env.local
 
-# Node
+# Node / Next.js
 node_modules/
 .next/
 dist/
 build/
-npm-debug.log
+npm-debug.log*
 
 # Python
 __pycache__/
 *.pyc
+*.pyo
 venv/
 env/
 .pytest_cache/
+*.egg-info/
+
+# Docker / build artefacts
+*.tar
+

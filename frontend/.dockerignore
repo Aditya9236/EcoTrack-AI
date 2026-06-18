@@ -1,0 +1,10 @@
+node_modules/
+.next/
+.env
+.env.*
+tests/
+*.test.*
+*.spec.*
+README.md
+CLAUDE.md
+AGENTS.md
