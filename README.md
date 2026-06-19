@@ -1,170 +1,83 @@
 # 🌍 EcoTrack AI
 
-EcoTrack AI is an AI-powered Carbon Footprint Awareness Platform designed to help individuals understand, track, and reduce their environmental impact through personalized insights and sustainable actions.
+AI-powered Carbon Footprint Awareness Platform built for **Prompt Wars Virtual Challenge 3** conducted by Hack2Skill.
 
-## 🚀 Features
+## 🚀 Live Demo
+🔗 [Live Website](
+https://ecotrack-frontend-71846091273.us-central1.run.app
+)
 
-### 📊 Carbon Footprint Dashboard
 
-* Daily, weekly, and monthly carbon tracking
-* Interactive charts and analytics
-* Carbon Health Score
-
-### 🤖 AI Sustainability Coach
-
-* Personalized eco recommendations
-* Emission source analysis
-* Smart sustainability insights
-
-### 🔮 Carbon Twin Predictor
-
-* Predict carbon footprint for:
-
-  * 1 Month
-  * 6 Months
-  * 1 Year
-* Compare current lifestyle with optimized habits
-
-### 📄 Smart Bill Scanner
-
-* Upload electricity bills and fuel receipts
-* Automatic consumption extraction
-* Manual correction support
-
-### 🛣️ Travel Emission Calculator
-
-* Compare emissions across:
-
-  * Car
-  * Bus
-  * Train
-  * Bike
-  * Walking
-
-### 🎮 Gamification
-
-* XP System
-* Levels and Streaks
-* Weekly Challenges
-* Achievement Badges
-* Leaderboard
-
-### 💬 Eco Coach Chat
-
-* AI-powered sustainability assistant
-* Personalized guidance and recommendations
+## 📂 GitHub Repository
+🔗 https://github.com/Aditya9236/EcoTrack-AI
 
 ---
 
-## 🏗️ Tech Stack
+## ✨ Features
+
+- 📊 Carbon Footprint Dashboard
+- 🤖 AI Sustainability Coach
+- 🔮 Future Impact Predictor
+- 📄 Smart Bill Scanner
+- 🚗 Travel Emission Calculator
+- 🏆 Gamification System
+- 🎯 Weekly Challenges
+- 📈 Interactive Charts
+
+---
+
+## 🛠 Tech Stack
 
 ### Frontend
-
-* Next.js
-* TypeScript
-* Tailwind CSS
-* Framer Motion
+- Next.js
+- TypeScript
+- Tailwind CSS
 
 ### Backend
-
-* FastAPI
-* Python
+- FastAPI
+- Python
 
 ### AI
+- Gemini AI
 
-* Google Gemini API (Optional)
-
-### Testing
-
-* Pytest
-* Vitest
-* React Testing Library
+### Cloud
+- Firebase
+- Google Cloud Platform
 
 ---
 
-## 📁 Project Structure
+## Architecture
 
-```text
-frontend/
-backend/
-tests/
-README.md
-AGENTS.md
-```
-
----
-
-## 🛡️ Security Features
-
-* Input Validation
-* Protected APIs
-* Environment Variables
-* Error Handling
-* Rate Limiting
+User
+↓
+Next.js Frontend
+↓
+FastAPI Backend
+↓
+Gemini AI + Firebase
+↓
+Google Cloud Platform
 
 ---
 
-## ♿ Accessibility
-
-* WCAG Compliant
-* Keyboard Navigation
-* Responsive Design
-* ARIA Labels
-* Screen Reader Support
-
----
-
-## 🎯 Problem Statement
-
-Design a solution that helps individuals understand, track, and reduce their carbon footprint through simple actions and personalized insights.
-
----
-
-## ⚡ Getting Started
+## Installation
 
 ### Frontend
 
-```bash
-cd frontend
 npm install
+
 npm run dev
-```
 
 ### Backend
 
-```bash
-cd backend
 pip install -r requirements.txt
+
 uvicorn main:app --reload
-```
 
 ---
 
-## 🧪 Running Tests
+## Built For
 
-### Frontend
+Prompt Wars Virtual Challenge 3 by Hack2Skill
 
-```bash
-npm run test
-```
-
-### Backend
-
-```bash
-python -m pytest
-```
-
----
-
-## 🌱 Vision
-
-EcoTrack AI aims to empower individuals with actionable insights and sustainable habits, making climate-conscious living simple, engaging, and accessible for everyone.
-
----
-
-## 👨‍💻 Developed For
-
-Hackathon Project – Carbon Footprint Awareness Platform
-
-Built with ❤️ for a greener future.
-
+Developed using Antigravity 🚀
