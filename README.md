@@ -74,6 +74,29 @@ pip install -r requirements.txt
 
 uvicorn main:app --reload
 
+backend/tests/
+├── test_api.py
+├── test_agents.py
+
+frontend/src/tests/
+├── Dashboard.test.tsx
+├── Navbar.test.tsx
+
+
+## 🧪 Running Tests
+
+### Frontend
+
+```bash
+npm test
+```
+
+### Backend
+
+```bash
+pytest
+```
+
 ---
 
 ## Built For
